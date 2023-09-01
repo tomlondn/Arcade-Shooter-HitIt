@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link type="image/png" sizes="16x16" rel="icon" href="img/crosshair.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/lib.js" defer></script>    
+    <script src="js/app.js" defer></script>    
+    <title>Shooter Hit it!</title>
+</head>
+<body>
+    <section id="game">
+        <section id="gameField">
+            <audio id="bgMusic" src="" loop></audio>
+
+            <header id="gameHeadline">
+                <h1>Hit it</h1>
+                <h2>Press Space to Start / Pause Game!</h2>
+            </header>
+            <p id ="timer"></p>
+
+            <canvas id="canvas"></canvas>
+        </section>
+        
+        <section id ="gameInfo">
+            <!-- <button id="modis">Für Später zum Modus wechsel</button> -->
+
+            <p id="howToPlay">
+                <span>Standard Spieldauer 2 Minuten.</span>
+                <span>Schieß so viele Objekte wie möglich ab um Punkte zu sammeln.</span>
+            </br>
+                <span>Die Größe und Geschwindigkeit der Objekte bestimmt die Punkte die du bekommst.</span>
+            </br>
+                <span>Abgeschossen werden die Objekte per Maus Klick.</span>
+                <span>Viel Spaß!</span>
+            </p>
+
+            <div id="playTimeWrapper">
+                <label id ="playTimeLabel" for="playTime">Spielzeit in Sekunden</label>
+                <input id="playTime" type="range" min = "30" max ="300" value="120">
+            </div>
+
+            <p id="showPoints">
+                Deine Punktzahl: <span id ="points">0</span>
+            </p>
+        </section>       
+       
+    </section>
+  
+
+</body>
+</html> 

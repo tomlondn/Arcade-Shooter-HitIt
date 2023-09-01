@@ -1,0 +1,204 @@
+@font-face
+{
+  font-family: 'PixelFont';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/PixeloidMono-d94EV.ttf') format('truetype');
+}
+#canvas.animated {
+    animation: movement 10s linear infinite;
+}
+#canvas {
+    display: block;
+    border:  1px solid;
+    margin: auto;
+    background-image: url("/img/background.jpg");
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1em;
+    box-shadow: 0 0 10px #92feff, 4px 0 60px #ff009e;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#game {
+    text-align: center;
+}
+#gameField {
+    position: relative;
+    display: block;
+    clear: both;
+}
+#gameField h1 {
+    margin: 0;
+}
+
+button {
+    padding: 1em ;
+    background: #300f7c;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 1em;
+    box-shadow: 0 0 10px #92feff, 4px 0 50px #ff009e;
+    border: 1px solid #92feff;
+}
+h1 {
+    font-size: 4em;
+    margin: 0.25em;
+}
+#gameHeadline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1em;
+    transform: translate(-50%, -50%);
+    Background: transparent;
+    font-family: PixelFont;
+}
+#gameInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+}
+#gameHeadline h1 {
+    font-size: 5em;
+}
+#gameHeadline h2 {
+    font-size: 2.5em;
+}
+* {
+    Color: #a00898;
+    font-family: PixelFont;
+    overflow: hidden;
+ }
+body {
+    background: black;
+}
+#showPoints {
+    color: #efc0fe;
+    font-size: 1.5em;
+    font-family: PixelFont;
+    margin: 0 0 0 1em;
+}
+#showPoints #points{
+    color: #efc0fe;
+    display: block;
+    font-size: 2em;
+    cursor: none;
+    font-weight: bold;
+}
+#timer {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    font-size: 1.5em;
+    color: #fff;
+    transform: translateY(-50%);
+}
+#bgMusic{
+    display: none;
+}
+#canvas {
+    cursor: none;
+    cursor: url(/img/crosshair.png), auto;
+    padding: 10px;
+}
+#playTimeWrapper {
+    margin: 0 2em;
+}
+
+#playTimeWrapper #playTimeLabel{
+    color: #efc0fe;
+    display: block;
+    font-size: 1.5em;
+}
+input[type=range] {
+    height: 26px;
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    background-color: #a00898;
+    border-radius: 10px;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #a00898;
+    background: #a00898;
+    border-radius: 14px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 40px;
+    border-radius: 12px;
+    background: #529DE1;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3px;
+  }
+  input[type=range]:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 10px #92feff;
+  }
+
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 40px;
+    border-radius: 12px;
+    background: #529DE1;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #50555C;
+    border: 0px solid #000000;
+    border-radius: 28px;
+    box-shadow: 1px 1px 1px #50555C;
+  }
+
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 40px;
+    border-radius: 12px;
+    background: #529DE1;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #50555C;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #50555C;
+  }
+
+@keyframes movement 
+{
+  0% { background-position: 0% center; }
+  100% { background-position: 200vw center; }
+}
+
+#explosion-sprite {
+    display: none;
+}
+
+#howToPlay {
+  margin: 0 0 0 1em;
+  text-align: left;
+}
+#howToPlay span {
+  color: #efc0fe;
+}
