@@ -12,7 +12,7 @@
     display: block;
     border:  1px solid;
     margin: auto;
-    background-image: url("/img/background.jpg");
+    background-image: url("../img/background.jpg");
     background-repeat: repeat-x;
     background-position: center center;
     background-size: cover;
@@ -104,7 +104,7 @@ body {
 }
 #canvas {
     cursor: none;
-    cursor: url(/img/crosshair.png), auto;
+    cursor: url(../img/crosshair.png), auto;
     padding: 10px;
 }
 #playTimeWrapper {
