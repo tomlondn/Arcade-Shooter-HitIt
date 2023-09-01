@@ -93,13 +93,13 @@ let create = false;
 
 // integrate Audio Files
 let bgMusic = elem("#bgMusic");
-bgMusic.src = "../audio/bg.wav";
+bgMusic.src = "./audio/bg.wav";
 bgMusic.volume = 0.1;
 
-const shoot = new Audio("../audio/shoot.wav");
+const shoot = new Audio("./audio/shoot.wav");
 shoot.volume = 0.1;
 
-const die = new Audio("../audio/die.wav");
+const die = new Audio("./audio/die.wav");
 die.volume = 0.1;
 
 // set the Size of the Canvas
